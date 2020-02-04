@@ -12,7 +12,7 @@ deadCountRate = ("deadCount" /. data)/
 length = Length@confirmedCount[[1]];
 p1 = ListLinePlot[confirmedCount, Mesh -> All,
   PlotLegends -> cityName, PlotTheme -> "Marketing",
-  PlotRange -> {0, 2600}, PlotLabel -> "感染变化折线图"];
+  PlotRange -> {0, 4000}, PlotLabel -> "感染变化折线图"];
 p2 = ListLinePlot[curedCountRate, Mesh -> All,
   PlotLegends -> cityName, PlotTheme -> "Marketing",
   PlotRange -> {0, 0.3}, PlotLabel -> "治愈率变化曲线图"];
@@ -29,4 +29,4 @@ p5 = BarChart[curedCountRate[[#]], ChartLabels -> cityName,
   Range[length]; ("curedCount" /. data);
 p6 = ListLinePlot[differenceCount, Mesh -> All,
   PlotLegends -> cityName, PlotTheme -> "Marketing",
-  PlotRange -> {0, 1000}, PlotLabel -> "感染数变化折线图"];]
+  PlotRange -> {0, 1260}, PlotLabel -> "感染数变化折线图"]; p1]
