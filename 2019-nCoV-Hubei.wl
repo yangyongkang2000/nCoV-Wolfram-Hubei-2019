@@ -22,11 +22,11 @@ p3 = ListLinePlot[deadCountRate, Mesh -> All,
 p4 = BarChart[deadCountRate[[#]], ChartLabels -> cityName,
     ColorFunction ->
      Function[{height}, ColorData["Rainbow"][height]]] & /@
-  Range[length];
+  Range[length-1];
 p5 = BarChart[curedCountRate[[#]], ChartLabels -> cityName,
     ColorFunction ->
      Function[{height}, ColorData["Rainbow"][height]]] & /@
-  Range[length]; ("curedCount" /. data);
+  Range[length-1]; ("curedCount" /. data);
 p6 = ListLinePlot[differenceCount, Mesh -> All,
   PlotLegends -> cityName, PlotTheme -> "Marketing",
-  PlotRange -> {0, 2000}, PlotLabel -> "感染数变化折线图"]; p6]
+  PlotRange -> {0, 2000}, PlotLabel -> "感染数变化折线图"];p1]

@@ -1,6 +1,6 @@
 olddata = 
  Import["/Users/yangyongkang/Desktop/olddata.json"]; newdata = 
- Import["/Users/yangyongkang/Desktop/newdata.json"]; \
+ Import["/Users/yangyongkang/Desktop/newdata.json"]; 
 Export["/Users/yangyongkang/Desktop/olddata.json", 
  Module[{list1 = {"provinceName", "provinceShortName", 
          "confirmedCount", "suspectedCount", "curedCount", 
