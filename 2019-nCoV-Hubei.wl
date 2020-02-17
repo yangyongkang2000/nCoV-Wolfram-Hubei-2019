@@ -30,8 +30,11 @@ p4 = BoxWhiskerChart[
    PlotTheme -> "Scientific", PlotLabel -> "\:6e56\:5317\:5404\:5730\:533a\:6bcf\:65e5\:6b7b\:4ea1\:7387\:53d8\:5316\:76d2\:987b\:56fe"];
 p5 = BoxWhiskerChart[
   Table[#[[k]] & /@ curedCountRate, {k, 1, length}],
-  PlotRange -> {0, 0.8}, ChartLabels -> Range@length, Joined -> True,
-   PlotTheme -> "Scientific", PlotLabel -> "\:6e56\:5317\:5404\:5730\:533a\:6bcf\:65e5\:6cbb\:6108\:7387\:53d8\:5316\:76d2\:987b\:56fe"];]
+  PlotRange -> {0, 1}, ChartLabels -> Range@length, Joined -> True,
+   PlotTheme -> "Scientific", PlotLabel -> "\:6e56\:5317\:5404\:5730\:533a\:6bcf\:65e5\:6cbb\:6108\:7387\:53d8\:5316\:76d2\:987b\:56fe"];p5]
+
+
+
 
 
 
